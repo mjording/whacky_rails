@@ -7,8 +7,8 @@ WhackyRails::Application.routes.draw do
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
-  match '/proxy' => WhackANode.new('/')
-  match '/redirect' => WhackANode.new('/', "localhost", 8810, true)
+  match '/proxy' => WhackANode::Proxy.new('/')
+  match '/redirect' => WhackANode::Redirect.new('/', "localhost", 8810, true)
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
