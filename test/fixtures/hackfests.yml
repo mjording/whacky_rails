@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  city: MyString
+  state: MyString
+  country: MyString
+  address: MyString
+  lat: 1.5
+  lon: 1.5
+  starts: 2011-05-17 15:20:50
+  ends: 2011-05-17 15:20:50
+  description: MyText
+
+two:
+  title: MyString
+  city: MyString
+  state: MyString
+  country: MyString
+  address: MyString
+  lat: 1.5
+  lon: 1.5
+  starts: 2011-05-17 15:20:50
+  ends: 2011-05-17 15:20:50
+  description: MyText

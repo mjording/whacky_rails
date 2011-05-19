@@ -1,0 +1,2 @@
+class HackfestsController < ApplicationController
+end

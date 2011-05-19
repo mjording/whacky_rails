@@ -1,0 +1,27 @@
+<h1>Listing hackers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Irony value</th>
+    <th>Email</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @hackers.each do |hacker| %>
+  <tr>
+    <td><%= hacker.name %></td>
+    <td><%= hacker.irony_value %></td>
+    <td><%= hacker.email %></td>
+    <td><%= link_to 'Show', hacker %></td>
+    <td><%= link_to 'Edit', edit_hacker_path(hacker) %></td>
+    <td><%= link_to 'Destroy', hacker, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Hacker', new_hacker_path %>
